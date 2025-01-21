@@ -11,7 +11,7 @@ plugins {
 }
 
 group = "dev.vicart"
-version = "1.0.1"
+version = "1.0.1-SNAPSHOT"
 
 repositories {
     mavenCentral()
@@ -83,7 +83,7 @@ jreleaser {
             mavenCentral {
                 create("sonatype") {
                     sign.set(false)
-                    active.set(Active.ALWAYS)
+                    active.set(Active.RELEASE)
                     url.set("https://central.sonatype.com/api/v1/publisher")
                     stagingRepository("build/staging-deploy")
                     username.set(findProperty("sonatype.username")?.toString())
