@@ -19,7 +19,7 @@ jobs:
       - name: Make gradlew executable
         run: chmod +x ./gradlew
       - name: Copy private keys
-        run: echo ${{ secrets.PRIVKEY }} > privkey.asc
+        run: echo '${{ secrets.PRIVKEY }}' > privkey.asc
       - name: Build library
         run: ./gradlew --no-daemon build
       - name: Create publication
