@@ -3,7 +3,7 @@ import org.jreleaser.model.Signing
 import java.util.Properties
 
 plugins {
-    kotlin("jvm") version "2.0.21"
+    kotlin("jvm") version "2.1.0"
     id("org.jreleaser") version "1.16.0"
     `java-library`
     `maven-publish`
