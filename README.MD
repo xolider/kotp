@@ -1,3 +1,7 @@
+![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/xolider/kotp/.github%2Fworkflows%2Fbuild-release.yml)
+![Maven Central Last Update](https://img.shields.io/maven-central/last-update/dev.vicart/kotp?label=Maven%20Central%20last%20update)
+
+
 # kotp
 
 kotp is a Kotlin/JVM library for generating and verifying One-Time Password (OTP) codes,
