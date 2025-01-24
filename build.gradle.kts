@@ -1,6 +1,4 @@
 import org.jreleaser.model.Active
-import org.jreleaser.model.Signing
-import java.util.Properties
 
 plugins {
     kotlin("jvm") version "2.1.0"
@@ -11,7 +9,7 @@ plugins {
 }
 
 group = "dev.vicart"
-version = "1.0.3-SNAPSHOT"
+version = "1.0.3"
 
 repositories {
     mavenCentral()
@@ -26,7 +24,7 @@ tasks.test {
     useJUnitPlatform()
 }
 kotlin {
-    jvmToolchain(21)
+    jvmToolchain(11)
 }
 
 java {

@@ -37,8 +37,8 @@ class HOTPGenerator(val codeLength: Int = 6, val algorithm: HashAlgorithm = Hash
         val offset = lastByte.toInt()
 
         val byteBuffer = ByteBuffer.allocate(4)
-        byteBuffer.put(0, hash, offset, 4)
-        var truncated = byteBuffer.getInt() and 0x7FFFFFFF
+        byteBuffer.put(hash, offset, 4)
+        var truncated = byteBuffer.position(0).getInt() and 0x7FFFFFFF
         truncated = truncated.mod(10f.pow(codeLength).toInt())
         return "$truncated".padStart(codeLength, '0')
     }
