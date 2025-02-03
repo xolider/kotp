@@ -16,7 +16,7 @@ repositories {
 }
 
 dependencies {
-    implementation("commons-codec:commons-codec:1.17.2")
+    implementation("commons-codec:commons-codec:1.18.0")
     testImplementation(kotlin("test"))
 }
 
